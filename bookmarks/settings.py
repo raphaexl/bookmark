@@ -30,6 +30,8 @@ if DEBUG:
     mimetypes.add_type('application/javascript', '.js', True)
     mimetypes.add_type('text/css', '.css', True)
 
+    THUMBNAIL_DEBUG = True
+
 ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
