@@ -25,7 +25,7 @@
             </div>
             {{ image.description | linebreaks }}
         </div>
-        <div class="images-likes">
+        <div class="image-likes">
             {% for user in image.users_like.all %}
             <div>
                 {% if user.profile.photo %}
@@ -51,7 +51,7 @@
 
  document.querySelector('a.like').addEventListener('click', function(e){
     e.preventDefault();
-    var likeButton = this;
+    const likeButton = this;
 
     //add request body
     const formData = new FormData();
